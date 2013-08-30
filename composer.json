@@ -1,0 +1,28 @@
+{
+    "name": "easygit/easygit",
+    "type": "library",
+    "description": "Easily manage Git repositories from within your PHP webapp.",
+    "homepage": "https://github.com/andywer/php-easygit",
+    "keywords": ["git"],
+    "license": "MIT",
+    
+    "authors": [
+        { "name": "Andy Wermke", "homepage": "https://github.com/andywer" }
+    ],
+    
+    "autoload" : {
+        "psr-0": { "EasyGit\\": "lib/" }
+    },
+    
+    "config": {
+        "bin-dir": "bin/"
+    },
+    
+    "require": {
+        "php": ">=5.3.0"
+    },
+    
+    "require-dev": {
+        "atoum/atoum": "dev-master"
+    }
+}
