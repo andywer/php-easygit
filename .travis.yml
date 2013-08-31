@@ -7,6 +7,8 @@ php:
 
 before_script:
   - composer install
+  - git config --global user.email "test@example.com"
+  - git config --global user.name "Test User"
 
 script:
   - sh ./sh/run-tests.sh
