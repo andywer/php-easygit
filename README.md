@@ -1,4 +1,4 @@
-# php-easygit
+# php-easygit [![Build Status](https://travis-ci.org/andywer/php-easygit.png?branch=master)](https://travis-ci.org/andywer/php-easygit)
 
 Manage Git repository contents from within your PHP webapp. No further dependencies. You just need to have Git installed.
 
