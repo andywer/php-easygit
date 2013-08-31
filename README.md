@@ -63,7 +63,7 @@ No offense!
 
 Feel free to submit your issues and feature requests. You can also participate in the development progress.
 
-If you want to run the tests, you will need to install the atoum unit test library. Just install composer and run `php composer.phar install`:
+If you want to run the tests, you will need to install the atoum unit test library. Just install composer and run it:
 
 ```sh
 ./sh/install-composer.sh
