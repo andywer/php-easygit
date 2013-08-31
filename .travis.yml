@@ -11,3 +11,7 @@ before_script:
 script:
   - sh ./sh/run-tests.sh
 
+notifications:
+  email:
+    - andy@dev.next-step-software.com
+
