@@ -1,11 +1,13 @@
 # php-easygit [![Build Status](https://travis-ci.org/andywer/php-easygit.png?branch=master)](https://travis-ci.org/andywer/php-easygit)
 
-Manage Git repository contents from within your PHP webapp. No further dependencies. You just need to have Git installed.
+Manage Git repositories from within your PHP webapp. No further dependencies. You just need to have PHP 5.3+ and Git installed.
+
+This library is a PHP wrapper around the Git command line tool. You may open, create or clone repositories, get information about it and execute any Git command.
 
 
 ## Installation
 
-To install the library you just need to clone the repository.
+To install the library you just need to clone the repository:
 
 ```sh
 git clone https://github.com/andywer/php-easygit.git
