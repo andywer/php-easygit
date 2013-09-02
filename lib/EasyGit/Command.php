@@ -22,7 +22,7 @@ class Command
         $returnCode = $this->shellExecute($commandString, $stdout, $stderr);
         
         if($returnCode != 0) {
-            throw new GitException($commandString, $stderr);
+            throw new GitException($commandString, trim($stderr));
         }
         
         return trim($stdout);
