@@ -7,11 +7,25 @@ This library is a PHP wrapper around the Git command line tool. You may open, cr
 
 ## Installation
 
-To install the library you just need to clone the repository:
+To install the library you just need to clone the repository (or add EasyGit as submodule):
 
 ```sh
 git clone https://github.com/andywer/php-easygit.git
 ```
+
+Or use composer to use EasyGit in your project. Create the following composer.json:
+
+```json
+{
+  "require" : {
+    "easygit/easygit" : "dev-master"
+  }
+}
+```
+
+And then execute `composer install`. Just add `require_once "vendor/autoload.php";` to your PHP source code.
+
+Done!
 
 
 ## Usage
@@ -47,6 +61,17 @@ echo $repo->git("status") . "\n";
 
 // The library will raise an exception and provide a useful error message if git encounters an error
 echo $repo->git("checkout branch-that-does-not-exist") . "\n";
+
+/* Output:
+ * PHP Fatal error:  Uncaught exception 'EasyGit\GitException' with message 'Git invocation failed:
+ * git 'checkout' 'branch-that-does-not-exist'. Error: error: pathspec 'branch-that-does-not-exist'
+ * did not match any file(s) known to git.' in /tmp/easygit/vendor/easygit/easygit/lib/EasyGit/Command.php:25
+ * Stack trace:
+ * #0 /tmp/easygit-test/vendor/easygit/easygit/lib/EasyGit/Repository.php(93): EasyGit\Command->run()
+ * #1 /tmp/easygit-test/test.php(4): EasyGit\Repository->git('checkout branch...')
+ * #2 {main}
+ *   thrown in /tmp/easygit-test/vendor/easygit/easygit/lib/EasyGit/Command.php on line 25
+ */
 
 ?>
 ```
