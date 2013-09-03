@@ -93,7 +93,7 @@ class Repository
         return $command->run();
     }
     
-    private function ensureValidGitRepo ()
+    protected function ensureValidGitRepo ()
     {
         try {
             if(!file_exists("{$this->dirPath}/.git")) {
