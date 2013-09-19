@@ -1,4 +1,4 @@
-# php-easygit [![Build Status](https://travis-ci.org/andywer/php-easygit.png?branch=master)](https://travis-ci.org/andywer/php-easygit)
+# php-easygit [![Build Status](https://travis-ci.org/andywer/php-easygit.png?branch=master)](https://travis-ci.org/andywer/php-easygit) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/andywer/php-easygit/badges/quality-score.png?s=841fe3e93fbf3f293b08de04e86e6b6179d55fd0)](https://scrutinizer-ci.com/g/andywer/php-easygit/)
 
 Manage Git repositories from within your PHP webapp. No further dependencies. You just need to have PHP 5.3+ and Git installed.
 
