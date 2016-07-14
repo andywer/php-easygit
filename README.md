@@ -34,7 +34,7 @@ Done!
 ```php
 <?php
 
-require_once 'vendor/easygit/EasyGit.php';
+require_once 'vendor/easygit/easygit/EasyGit.php';
 
 use \EasyGit\Repository;
 
